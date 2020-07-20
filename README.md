@@ -61,6 +61,7 @@ randomFileName() {
 ```
 
 4. textBolder
+* return statement has react expression
 ```
   textBolder(text, boldStr) {
     const keyword = new RegExp(boldStr, 'i');
