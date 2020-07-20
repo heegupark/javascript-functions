@@ -58,3 +58,26 @@ function isAlphaNumeric(char) {
 randomFileName() {
     return Math.random().toString(36).substring(2) + Math.random().toString(36).substring(2)
 };
+```
+
+4. textBolder
+```
+  textBolder(text, boldStr) {
+    const keyword = new RegExp(boldStr, 'i');
+    const array = text.split(keyword);
+    const keyIndex = text.toLowerCase().indexOf(boldStr.toLowerCase());
+    const originalKeyword = text.substring(keyIndex, keyIndex + boldStr.length);
+    return (
+      <>
+        {array.map((item, index) => (
+          <span key={index}>
+            {item}
+            {index !== array.length - 1 && (
+              <b className="text-warning">{originalKeyword}</b>
+            )}
+          </span>
+        ))}
+      </>
+    );
+  }
+```
