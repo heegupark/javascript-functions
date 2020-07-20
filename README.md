@@ -1,7 +1,7 @@
 # javascript-functions
 
 1. isAlphaNumeric
-
+* this is about 50% faster than regex `/[0-9a-z]/.test(char)`
 ```
 function isAlphaNumeric(char) {
     let code = char.charCodeAt(0)
