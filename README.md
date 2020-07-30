@@ -111,3 +111,9 @@ randomFileName() {
     return '#' + ('000000' + (0xFFFFFF ^ parseInt(color.substring(1), 16)).toString(16)).slice(-6);
   }
 ```
+
+7. Unique random number array
+```
+  const arr = [...((add, set) => add(set, add))((set, add) => set.size < 9 ? add(set.add(Math.floor(Math.random() * 9)), add) : set, new Set())];
+```
+
