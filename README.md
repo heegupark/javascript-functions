@@ -117,3 +117,7 @@ randomFileName() {
   const arr = [...((add, set) => add(set, add))((set, add) => set.size < 9 ? add(set.add(Math.floor(Math.random() * 9)), add) : set, new Set())];
 ```
 
+8. Create random array
+```
+    const data = Array.apply(null, {length:1000}).map(Function.call, Math.random)
+```
