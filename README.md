@@ -119,5 +119,5 @@ randomFileName() {
 
 8. Create random array
 ```
-    const data = Array.apply(null, {length:1000}).map(Function.call, Math.random)
+  const data = Array.apply(null, {length:1000}).map(Function.call, Math.random)
 ```
