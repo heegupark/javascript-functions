@@ -121,3 +121,17 @@ randomFileName() {
 ```
   const data = Array.apply(null, {length:1000}).map(Function.call, Math.random)
 ```
+
+9. Sum(without using loop)
+- General function
+```
+function sum(n) {
+    return n % 2===0 ? (1+n)*Math.floor(n/2) : (1+n)*Math.floor(n/2) + Math.floor(n/2)+1
+}
+```
+
+- Using arrow function
+```
+const sum1 = (n) => n % 2===0 ? (1+n)*Math.floor(n/2) : (1+n)*Math.floor(n/2) + Math.floor(n/2)+1
+```
+
