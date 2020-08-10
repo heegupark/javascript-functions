@@ -132,6 +132,6 @@ function sum(n) {
 
 - Using arrow function
 ```
-const sum1 = (n) => n % 2===0 ? (1+n)*Math.floor(n/2) : (1+n)*Math.floor(n/2) + Math.floor(n/2)+1
+const sum = (n) => n % 2===0 ? (1+n)*Math.floor(n/2) : (1+n)*Math.floor(n/2) + Math.floor(n/2)+1
 ```
 
